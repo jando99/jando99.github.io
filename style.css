@@ -1,0 +1,66 @@
+
+#doge {
+    color: blue;
+    border-width: thin;
+    text-align: center;
+}
+
+#cat {
+    margin: auto;
+    border: 5px solid #ee3e80;
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.center{
+    text-align: center;
+    list-style-position: inside;
+    
+}
+
+
+h2 {
+    text-align: center;
+    
+}
+
+/* for user ease to move around the webpage
+*/
+
+.hw{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+}
+
+#navbar ul{
+    list-style: none;
+    background: mediumslateblue;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#navbar li {
+    display: inline-block;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+#navbar a:hover {
+    background: orange;
+}
+
