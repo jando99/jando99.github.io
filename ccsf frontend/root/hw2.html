@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "description" content = "This page demonstrates fonts, font sizes and color. Then js logic and operations.">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title> JavaScript, jQuery, AJAX Homework 2 </title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/hw.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#hw2b").fadeTo("slow", 0.15);
+                });
+            });
+        </script>
+    </head>
+    <body id="hw" style="background-color: bisque;">
+        <div id="doge">
+            <h1><b>CNIT HW 2</b></h1>
+        </div>
+
+        <div id="header1">
+            <h2>Basic Operations</h2>
+            <h2>Part 1 is an example of fonts,font sizes and color.<br>Part 2 is an example of js logic and operations.</h2>
+        </div>
+
+        <div id="navbar">
+            <ul >
+                <li><a href="hw1.html">Home</a></li>
+                <li><a href="hw3.html">Next</a></li>
+            </ul>
+        </div>
+
+        <div class="vertical-menu">
+            <a href="#" class="active">Assignments</a>
+            <a href="#hw2a">Part 1</a>
+            <a href="#hw2b">Part 2</a>
+          </div>
+
+        <section id="hw2a">
+            <h3>Here is part 1.</h3>
+            <b id="xy">xy</b> 
+            <b id="twelve">12</b> 
+            <i id="eightnine">89</i>
+        </section>
+
+        <footer>
+
+        <section id ="hw2b">
+            <h3>Here is part 2.</h3>
+            <form name="form1">
+                <table>
+                    <tr>
+                        <td>First Number:</td>
+                        <td><input type="text" name="num1" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Second Number:</td>
+                        <td><input type="text" name="num2" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>third Number:</td>
+                        <td><input type="text" name="num3" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Sum is:</td>
+                        <td><input type="text" name="answer" size="10" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Product is:</td>
+                        <td><input type="text" name="answer1" size="10" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Average is:</td>
+                        <td><input type="text" name="answer2" size="10" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Number:</td>
+                        <td><input type="text" name="answer3" size="10" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Number:</td>
+                        <td><input type="text" name="answer4" size="10" readonly></td>
+                    </tr>
+
+
+                </table>
+                <input type="button" onclick="part2()" value="SUBMIT">
+                <input type="reset" value="RESET">
+
+            </form>
+            <p>Please click to show fade.</p>
+            <button>Click for Fade</button><br><br>
+        </section>
+        
+        
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,143 @@
+
+#doge {
+    color: blue;
+    border-width: thin;
+    text-align: center;
+}
+
+#cat {
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.center{
+    text-align: center;
+    list-style-position: inside;
+    
+}
+
+
+h2 {
+    text-align: center;
+    
+}
+
+/* for user ease to move around the webpage
+*/
+
+.hw{
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+}
+
+#navbar ul{
+    list-style: none;
+    background: mediumslateblue;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#navbar li {
+    display: inline-block;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+#navbar a:hover {
+    background: orange;
+}
+
+/* css for hw2 */
+.vertical-menu {
+    width: 120px;
+    margin: auto;
+  }
+  
+.vertical-menu a {
+
+    background-color: #eee;
+    color: rgb(25, 0, 255);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+  
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+  
+.vertical-menu a.active {
+    background-color: rgb(246, 86, 246);
+    color: white;
+}
+
+
+#header1 {
+    color: navy;
+}
+
+#hw2a {
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+#hw2a h3{
+    color: navy;
+}
+
+#xy {
+    font-family: 'Times New Roman';
+    color: red;
+    
+}
+#twelve {
+    font-family: Arial;
+    color: blue;
+    
+}
+#eightnine {
+    font-family: Impact;
+    color: green;
+    
+}
+
+#hw2b {
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#hw2b h3{
+    color: navy;
+}
