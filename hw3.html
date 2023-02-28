@@ -6,6 +6,10 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title> JavaScript, jQuery, AJAX Homework 3 </title>
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/hw.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+       
     </head>
     <body id="hw" style="background-color: bisque;">
         <div id="doge">
@@ -13,7 +17,7 @@
         </div>
 
         <div>
-            <h2>Currently under development...</h2>
+            <h2>Functions</h2>
         </div>
 
         <div id="navbar">
@@ -24,8 +28,166 @@
             </ul>
         </div>
 
+        <div class="vertical-menu3">
+            <a href="#" class="active">Assignments</a>
+            <a href="#grades">Part 1</a>
+            <a href="#money">Part 2</a>
+            <a href="#temp">Part 3</a>
+        </div>
+
+      <div class="capsule">
+        <div class="grades">
+          <form id="Grades">
+            <h1 id="p1h1">Part 1</h1>
+            <h3 id="p1h3">Student Grades</h3>
+            <label for="hwAvg">Homework Average:</label>
+            <input type="number" id="hwAvg" name="hwAvg"  max="50"><br>
+            <label for="midExam">Mid-Term Exam Score:</label>
+            <input type="number" id="midExam" name="midExam"  max="50"><br>
+            <label for="finalExam">Final Exam Score:</label>
+            <input type="number" id="finalExam" name="finalExam"  max="50"><br>
+            <label for="participation">Participation:</label>
+            <input type="number" id="participation" name="participation"  max="50"><br>
+  
+            <input type="button" value="Submit" onclick="calculateGrade()">
+            <input type="reset" value="Clear" onclick="clearForm()">  
+        </form>
+        <br>
+        <textarea id="output" rows="4" cols="40"readonly></textarea>
+        </div>
+
+      <div class="money">
+        <h1>Part 2</h1>
+        <h3>Sales!</h3>
+        <p>Please enter information to show salesmen's earnings.</p>
+        <form name="moneyform" id="moneyform" onsubmit="return false">
+          <table>
+            <tr title="Please make sure that the salesperson's name is spelled correctly">
+              <td>
+                <label for="userID">Seller's Name:</label>
+              </td>
+              <td>
+                <input type="text" name="user" id="userID" class="missingtxt">
+              </td>
+              <td class="entryfield"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Enter the sold quantity</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><label for="obj1label">Item 1:</label></td>
+              <td>
+                <input type="number" min="0" name="obj1" id="obj1label" class="missingtxt">
+              </td>
+              <td class="entryfield"></td>
+            </tr>
+            <tr>
+              <td><label for="obj2label">Item 2:</label></td>
+              <td>
+                <input type="number" min="0" name="obj2" id="obj2label" class="missingtxt">
+              </td>
+              <td class="entryfield"></td>
+            </tr>
+            <tr>
+              <td><label for="obj3label">Item 3:</label></td>
+              <td>
+                <input type="number" min="0" name="obj3" id="obj3label" class="missingtxt">
+              </td>
+              <td class="entryfield"></td>
+            </tr>
+            <tr>
+              <td><label for="obj4label">Item 4:</label></td>
+              <td>
+                <input type="number" min="0" name="obj4" id="obj4label" class="missingtxt">
+              </td>
+              <td class="entryfield"></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" value="Submit" onclick="money()">
+                
+              </td>
+            </tr>
+          </table>
+          <form>
+            <input type="reset" value="Clear" onclick="dataReset()">
+          </form>
+        </form>
+        <table>
+          <tr>
+            <th>Item#</th>
+            <th>Price</th>
+            <th>Quantity Sold</th>
+            <th>Total $</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>$20.99</td>
+            <td><input id="obj1qty" type="text" class="entry" readonly /></td>
+            <td><input id="obj1total" type="text" class="entry" readonly /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>$12.75</td>
+            <td><input id="obj2qty" type="text" class="entry" readonly /></td>
+            <td><input id="obj2total" type="text" class="entry" readonly /></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>$9.95</td>
+            <td><input id="obj3qty" type="text" class="entry" readonly /></td>
+            <td><input id="obj3total" type="text" class="entry" readonly /></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>$35.89</td>
+            <td><input id="obj4qty" type="text" class="entry" readonly /></td>
+            <td><input id="obj4total" type="text" class="entry" readonly /></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th style="width: 150px"></th>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Total Amount Sold</td>
+            <td><input type="text" id="amountTotal" readonly class="entry" /></td>
+          </tr>
+          <tr>
+            <td>Total Weekly Earnings</td>
+            <td>
+              <input id="totalWeekly" type="text" readonly class="entry" />
+            </td>
+          </tr>
+        </table>
+
+          </div>
+      </div>
+
+
+      <div class="temp">
+        <form id="weather">
+        <h1>Part 3</h1>
+        <h3>Temperature Converter</h3>
+        <label>Enter temperature:</label>
+        <input type="number" id="inputBox" placeholder="Enter temperature in (C/F)" required><br><br>
+        <label>Result:</label>
+        <textarea id="outputBox" readonly></textarea><br><br>
+        <button type="button" onclick="convertToF()">Convert to Fahrenheit</button>
+        <button type="button" onclick="convertToC()">Convert to Celsius</button>
+        <button type="button" onclick="clearTemp()">Clear</button>
+        </form>
+      </div>
+
+
+      <form id="backup">
+        <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
+    </form>
       
-        
+
 
     </body>
 
