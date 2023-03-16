@@ -26,7 +26,7 @@
 }
 
 
-h2 {
+h2,p{
     text-align: center;
     
 }
@@ -246,6 +246,23 @@ h2 {
     text-align: center;
     justify-content: center;
     display:flex;
+}
+
+/* css for part 4*/
+
+#loopP1, #loopP2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 1px;
+    width: 340px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
 }
 
 

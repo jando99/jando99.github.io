@@ -1,7 +1,7 @@
 //js code for hw2
 
 function part2() {
-    var num1, num2, num3, sum, product, avg, small, large;
+    let num1, num2, num3, sum, product, avg, small, large;
 
     num1 = document.forms["form1"].elements["num1"].value;
     num2 = document.forms["form1"].elements["num2"].value;
@@ -96,9 +96,6 @@ function clearForm()
 
 //part2
 
-
-
-// Part-2 scripts below
 
 function money() 
 {
@@ -207,3 +204,56 @@ function clearTemp()
   document.getElementById("inputBox").value = "";
   document.getElementById("outputBox").value = "";
 }
+
+
+//part4
+
+function loop1()
+{
+	//declared and initialized variables 
+	let product = 1, sum = 0;
+
+	//loop
+	for (let i = 5; i <= 25; i +=4)
+	{
+		product *= i;
+		console.log(i);
+		sum += i;
+	}
+
+	console.log(sum);
+	document.getElementById("loopP1").innerHTML =
+	"The result of 5 * 9 * 13 * 17 * 21 * 25 is " + product.toLocaleString() +"."+"<br>"+
+	"The result of 5 + 9 + 13 + 17 + 21 + 25 is " +sum.toLocaleString() +"."+"<br>"+"<br>" ;
+}
+
+loop1();
+
+function loop2()
+{
+	//declared and initialized variables 
+	let num = 3, product = 1, sum = 0;
+	
+	//while loop
+	while (num <= 18)
+	{
+		product *= num;
+		sum += num;
+		num += 3;
+	}
+
+	console.log(product);
+	console.log(sum);
+	document.getElementById("loopP2").innerHTML =
+	"The result of 3 * 6 * 9 * 12 * 15 * 18 is " + product.toLocaleString() +"."+"<br>"+
+	"The result of 3 + 6 + 9 + 12 + 15 + 18 is " + sum.toLocaleString() +"."+"<br>"+"<br>";
+}
+
+loop2();
+
+//jQuery to move text
+$(function() 
+{
+	$(".move").draggable();
+});
+  
