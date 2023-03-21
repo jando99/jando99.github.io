@@ -226,7 +226,6 @@ function loop1()
 	"The result of 5 * 9 * 13 * 17 * 21 * 25 is " + product.toLocaleString() +"."+"<br>"+
 	"The result of 5 + 9 + 13 + 17 + 21 + 25 is " +sum.toLocaleString() +"."+"<br>"+"<br>" ;
 }
-
 loop1();
 
 function loop2()
@@ -248,7 +247,6 @@ function loop2()
 	"The result of 3 * 6 * 9 * 12 * 15 * 18 is " + product.toLocaleString() +"."+"<br>"+
 	"The result of 3 + 6 + 9 + 12 + 15 + 18 is " + sum.toLocaleString() +"."+"<br>"+"<br>";
 }
-
 loop2();
 
 //jQuery to move text
@@ -256,4 +254,35 @@ $(function()
 {
 	$(".move").draggable();
 });
-  
+
+
+//jQuery and js for table/loops
+$(document).ready(function() 
+{
+	//declared and initialized variables 
+	let principal = 1000, years = 5, rates = [0.05, 0.06, 0.07];
+
+	//loops for table
+	for (let i = 0; i < rates.length; i++) 
+	{
+		let rate = rates[i];
+
+		// create table element
+		let table = $("<table>");
+
+		// create table headings
+		let headings = $("<tr><th>Year</th><th>Amount on Deposit</th><th>Interest Rate</th></tr>");
+		table.append(headings);
+
+		// calculate and append rows for each year
+		for (let k = 1; k <= years; k++) 
+		{
+			let amount = principal * Math.pow(1 + rate, k);
+			let row = $("<tr><td>" + k + "</td><td>" + amount.toFixed(2) + "</td><td>" + rate.toFixed(2) + "</td></tr>");
+			table.append(row);
+		}
+
+		//append table to page
+		$("form").append(table);
+	}
+});

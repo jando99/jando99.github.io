@@ -9,6 +9,26 @@
         <script defer src="js/hw.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <style>
+            /*css for part2*/
+            table {
+                border-collapse: collapse;
+                margin: auto;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border: 1px solid #090909;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            tr:nth-of-type(even) {
+                background-color: #FFACEC;
+            }
+        </style>
+    
     </head>
     <body id="hw" style="background-color: bisque;">
         <div id="doge">
@@ -27,9 +47,15 @@
             </ul>
         </div>
 
+        <div class="vertical-menu3">
+            <a href="#" class="active">Assignments</a>
+            <a href="#loops">Part 1</a>
+            <a href="#intrestLoop">Part 2</a>
+        </div>
+
         <div id="loops">
-            <h2 >Part-1</h2>
-            <p>
+            <h2 class="move">Part 1</h2>
+            <p class="move">
                 This part has 2 sections. The first section calculates the product and sum
                 <br> of every fourth integer from 5 to 25 inclusive. The next section calculates
                 <br> the product and sum of every third integer from 3 to 18 inclusive.
@@ -42,16 +68,19 @@
                 <p>
                     <span style='font-size:100px;'>&#128126;</span>
                 </p>
-
             </div>
 
-            <h2>Part 2 under development...</h2>
+        </div>
+        <h2>Part 2</h2>
+        <p>
+            This outputs 3 tables with compound intrest using loops
+            <br>in a span of 5 years.
+        </p>
+        <form class="intrestLoop"></form>
 
+        <div style="text-align: center;">
+            <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
         </div>
 
-        
-      
-
     </body>
-
 </html>

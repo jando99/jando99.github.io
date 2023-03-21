@@ -254,7 +254,7 @@ h2,p{
     padding-top: 10%;
     padding-bottom: 10%;
     margin: auto;
-    border: 5px solid rgb(246, 86, 246);
+    border: 5px solid #9999FF;
     padding: 1px;
     width: 340px;
     border-radius: 10px;
@@ -264,6 +264,11 @@ h2,p{
     text-align: center;
     justify-content: center;
 }
+
+
+
+
+
 
 
 
