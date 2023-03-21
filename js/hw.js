@@ -278,7 +278,7 @@ $(document).ready(function()
 		for (let k = 1; k <= years; k++) 
 		{
 			let amount = principal * Math.pow(1 + rate, k);
-			let row = $("<tr><td>" + k + "</td><td>" + amount.toFixed(2) + "</td><td>" + rate.toFixed(2) + "</td></tr>");
+			let row = $("<tr><td>" + k + "</td><td>" +"$"+amount.toFixed(2) + "</td><td>" + rate.toFixed(2) + "</td></tr>");
 			table.append(row);
 		}
 
