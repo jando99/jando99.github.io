@@ -2,10 +2,16 @@
 <html lang = "en">
     <head>
         <meta charset = "utf-8">
-        <meta name = "description" content = "Currently in development">
+        <meta name = "description" content = "THis page will demonstrate how arrays are used">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title> JavaScript, jQuery, AJAX Homework 5 </title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/hw5.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <script>
+            
+        </script>
     </head>
     <body id="hw" style="background-color: bisque;">
         <div id="doge">
@@ -13,7 +19,7 @@
         </div>
 
         <div>
-            <h2>Currently under development...</h2>
+            <h2>Arrays!</h2>
         </div>
 
         <div id="navbar">
@@ -23,9 +29,113 @@
                 <li><a href="hw6.html">Next</a></li>
             </ul>
         </div>
-        
-        
 
+        <div class="vertical-menu3">
+            <a href="#" class="active">Assignments</a>
+            <a href="#dataForm">Part 1</a>
+            <a href="#ansDrop">Part 2</a>
+            <a href="#census">Part 3</a>
+        </div>
+
+
+        <div>
+            <h2>Part 1!</h2>
+            <p>
+                This part will take in user data based on what the
+                <br>user's age group, prefered browsers and favorite
+                <br> movie genre.
+            </p>
+        </div>
+        <form id="dataForm">
+            <label for="nameInput">Name:</label>
+		    <input type="text" id="nameInput" name="nameInput"><br><br>
+
+            <label>Age Group:</label><br>
+            <input type="radio" id="age1" name="ageGroup" value="less than 21">
+            <label for="age1">Less than 21</label><br>
+            <input type="radio" id="age2" name="ageGroup" value="21 to 50">
+            <label for="age2">Between 21 and 50</label><br>
+            <input type="radio" id="age3" name="ageGroup" value="older than 50">
+            <label for="age3">Older than 50</label><br><br>
+
+            <label>Browsers used:</label><br>
+            <input type="checkbox" id="browser1" name="browser[]" value="Firefox">
+            <label for="browser1">Firefox</label><br>
+            <input type="checkbox" id="browser2" name="browser[]" value="Edge">
+            <label for="browser2">Edge</label><br>
+            <input type="checkbox" id="browser3" name="browser[]" value="Chrome">
+            <label for="browser3">Chrome</label><br>
+            <input type="checkbox" id="browser4" name="browser[]" value="Safari">
+            <label for="browser4">Safari</label><br><br>
+
+            <label for="movieSelect">Favorite movie genre:</label><br>
+            <select id="movieSelect" name="movieSelect">
+                <option value="">--Select an option--</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Documentary">Documentary</option>
+                <option value="Science Fiction">Science Fiction</option>
+            </select><br><br>
+
+            <button type="button" onclick="hw5p1Form()">Submit</button>
+	        <button type="reset">Clear</button>
+
+            <div id="ansData"></div>
+        </form>
+
+
+        <div>
+            <h2>Part 2!</h2>
+            <p>
+                This part shows pulldown menus and how they are
+                <br>utilized to check external websites in this example.
+            </p>
+        </div>
+        <form id="ansDrop">
+            <label for="menu1">Select a website from Menu 1:</label>
+            <select id="menu1" onchange="externalSite1()">
+                <option value="" >Choose a website</option>
+                <option value="https://www.chess.com">Chess</option>
+                <option value="https://www.youtube.com">YouTube</option>
+                <option value="https://www.nba.com">NBA</option>
+            </select>
+            <br><br>
+        
+            <label for="menu2">Select a website from Menu 2:</label>
+            <select id="menu2">
+                <option value="">Choose a website</option>
+                <option value="https://www.github.com">GitHub</option>
+                <option value="https://www.freecodecamp.org/learn">freeCodeCamp</option>
+                <option value="https://leetcode.com">LeetCode</option>
+            </select>
+            <br>
+            <button onclick="externalSite2()">Click to external site!</button>
+        </form>
+
+
+        <div>
+            <h2>Part 3!</h2>
+            <p>
+                This part has census data array stored limited to the first
+                <br>5 states in alphabetical order.
+            </p>
+        </div>
+        <form id="census">
+            <label for="userInput">Enter state name or abbreviation:</label>
+            <input type="text" id="userInput" name="userInput" required>
+            <br>
+            <button type="button" onclick="census()">State Info</button>
+            <button type="reset">Clear</button>
+
+            <div id="ansCensus"></div>
+        </form>
+
+
+        <form id="backup">
+            <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
+        </form>
+        
     </body>
 
 </html>
