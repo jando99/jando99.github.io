@@ -285,3 +285,34 @@ h2,p{
     justify-content: center;
 }
 
+#numDeci, #userNum{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid #FF33FF;
+    padding: 1px;
+    width: 340px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+#charContent{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid #FF33FF;
+    padding: 1px;
+    width: 422px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
