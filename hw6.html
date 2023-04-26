@@ -5,7 +5,7 @@
         <meta name = "description" content = "This page shows the uses of objects">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title> JavaScript, jQuery, AJAX Homework 6 </title>
-        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="css/style.css">
         <script defer src="js/hw6.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
@@ -36,80 +36,90 @@
             <a href="#userNum">Part 3</a>
         </div>
         <br>
+        
+        <div id="numDeci">
+            
+        
+            <h2>Part 1</h2>
+            <p>
+                The first part calculates and shows the rounded number,<br>
+                square root and rounding to 10, 100, and 1000s place.<br>
+                Enter PI for a suprise 🥧!
 
-        <h2>Part 1</h2>
-        <p>
-            The first part calculates and shows the rounded number,<br>
-            square root and rounding to 10, 100, and 1000s place.<br>
-            Enter PI for a suprise 🥧!
+            </p>
 
-        </p>
+            <form >
+                <label for="numInput">Enter a number with 4 decimal places: </label><br>
+                <input type="text" id="numInput" name="numInput"><br><br>
+                <input type="button" value="Enter" onclick="numDeci()">
+                <input type="button" value="Clear" onclick="clearForm1()">
+            </form>
 
-        <form class="numDeci">
-            <label for="numInput">Enter a number with 4 decimal places: </label><br>
-            <input type="text" id="numInput" name="numInput"><br><br>
-            <input type="button" value="Enter" onclick="numDeci()">
-            <input type="button" value="Clear" onclick="clearForm1()">
-        </form>
+            <br>
+            <div id="output"></div>
 
-        <br>
-        <div id="output"></div>
-
-
+        </div>
 
         
-        <h2>Part 2</h2>
-        <p>
-            The second part counts how many specific characters are in a string!
-        </p>
 
-        <form class="charContent">
-            <label for="phrase">Enter a long string:</label><br>
-            <textarea id="phrase" name="phrase" rows="10" cols="50"></textarea><br>
-            <label for="indexId">Enter a single character:</label><br>
-            <input type="text" id="indexId" name="indexId" maxlength="1"><br>
-            <button type="button" onclick="indexSearch()">Enter</button>
-        </form>
-        <br>
-        <p id="result1"></p>
-        <br>
+        <div id="charContent">
+
+            <h2>Part 2</h2>
+            <p>
+                The second part counts how many specific characters are in a string!
+            </p>
+
+            <form >
+                <label for="phrase">Enter a long string:</label><br>
+                <textarea id="phrase" name="phrase" rows="10" cols="50"></textarea><br>
+                <label for="indexId">Enter a single character:</label><br>
+                <input type="text" id="indexId" name="indexId" maxlength="1"><br>
+                <button type="button" onclick="indexSearch()">Enter</button>
+            </form>
+            <br>
+            <p id="result1"></p>
+            <br>
+
+        </div>
 
 
+        <div id="userNum">
 
-
-        <h2>Part 3</h2>
-        <p>
-            The last part gathers user contact information then sections<br>
-            it off into area code, first 3 digits and last 4 digits. <br>
-            Extra credit included.
-        </p>
         
-        <form class="userNum">
-            <label for="userContact">Phone Number:</label>
-            <input type="text" id="userContact" name="userContact"><br>
+            <h2>Part 3</h2>
+            <p>
+                The last part gathers user contact information then sections<br>
+                it off into area code, first 3 digits and last 4 digits. <br>
+                Extra credit included.
+            </p>
+            
+            <form >
+                <label for="userContact">Phone Number:</label>
+                <input type="text" id="userContact" name="userContact"><br>
 
-            <label for="areaCode">Area Code:</label>
-            <input type="text" id="areaCode" name="areaCode" readonly><br>
-        
-            <label for="firstThree">First Three Digits:</label>
-            <input type="text" id="firstThree" name="firstThree" readonly><br>
-        
-            <label for="lastFour">Last Four Digits:</label>
-            <input type="text" id="lastFour" name="lastFour" readonly><br>
-        
-            <input type="button" id="enter" value="Enter">
-            <input type="button" id="clear" value="Clear"><br>
-        
-            <div id="ansError"></div>
-        </form>
+                <label for="areaCode">Area Code:</label>
+                <input type="text" id="areaCode" name="areaCode" readonly><br>
+            
+                <label for="firstThree">First Three Digits:</label>
+                <input type="text" id="firstThree" name="firstThree" readonly><br>
+            
+                <label for="lastFour">Last Four Digits:</label>
+                <input type="text" id="lastFour" name="lastFour" readonly><br>
+            
+                <input type="button" id="enter" value="Enter">
+                <input type="button" id="clear" value="Clear"><br>
+            
+                <div id="ansError"></div>
+            </form>
 
 
+        </div>
+            
+    
         <form id="backup">
             <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
         </form>
     
-    
-
     </body>
 
 </html>
