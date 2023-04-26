@@ -7,7 +7,7 @@
 
 #cat {
     margin: auto;
-    border: 5px solid #ee3e80;
+    border: 5px solid rgb(246, 86, 246);
     padding: 20px;
     width: 275px;
     border-radius: 10px;
@@ -15,6 +15,7 @@
     -webkit-border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 12em;
 }
 
 
@@ -25,13 +26,21 @@
 }
 
 
-h2 {
+h2,p{
     text-align: center;
     
 }
 
 /* for user ease to move around the webpage
 */
+
+#backup{
+    padding-bottom: 2em;
+    padding-top: 1em;
+    margin: auto;
+    text-align: center;
+    
+}
 
 .hw{
     margin: 0;
@@ -64,3 +73,247 @@ h2 {
     background: orange;
 }
 
+
+/* css for hw2 */
+
+.vertical-menu {
+    width: 120px;
+    margin: auto;
+  }
+  
+.vertical-menu a {
+
+    background-color: #eee;
+    color: rgb(25, 0, 255);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+  
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+  
+.vertical-menu a.active {
+    background-color: rgb(246, 86, 246);
+    color: white;
+}
+
+
+#header1 {
+    color: navy;
+}
+
+#hw2a {
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    top: 0;
+    margin-bottom: 12em;
+}
+#hw2a h3{
+    color: navy;
+}
+
+#xy {
+    font-family: 'Times New Roman';
+    color: red;
+    
+}
+#twelve {
+    font-family: Arial;
+    color: blue;
+    
+}
+#eightnine {
+    font-family: Impact;
+    color: green;
+    
+}
+
+#hw2b {
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#hw2b h3{
+    color: navy;
+}
+
+/* css for part 3 */
+
+.vertical-menu3 {
+    width: 120px;
+    margin: auto;
+    margin-top: 3em;
+  }
+  
+.vertical-menu3 a {
+
+    background-color: #eee;
+    color: rgb(25, 0, 255);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+  
+.vertical-menu3 a:hover {
+    background-color: #ccc;
+}
+  
+.vertical-menu3 a.active {
+    background-color: rgb(246, 86, 246);
+    color: white;
+}
+
+#grades,#hwAvg, #midExam, #finalExam, #participation, #output, #result1{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 20px;
+    width: 275px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+#money, #userID, #obj1label, #obj2label, #obj3label, #obj4label{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 1px;
+    width: 240px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+#money, #obj1qty,#obj1total,#obj2qty,#obj2total,#obj3qty,#obj3total,#obj4qty,#obj4total,#amountTotal,#totalWeekly{
+  padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 1px;
+    width: 160px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.capsule{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.temp{
+  text-align: center;
+}
+
+#temp , #inputBox,#outputBox{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid rgb(246, 86, 246);
+    padding: 1px;
+    width: 240px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+}
+
+/* css for part 4*/
+
+#loopP1, #loopP2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid #9999FF;
+    padding: 1px;
+    width: 340px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* css for hw5*/
+
+#dataForm, #ansDrop, #census{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid #FF33FF;
+    padding: 1px;
+    width: 340px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*css hw6*/
+#numDeci, #userNum{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid #FF33FF;
+    padding: 1px;
+    width: 340px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+#charContent{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    border: 5px solid #FF33FF;
+    padding: 1px;
+    width: 422px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
