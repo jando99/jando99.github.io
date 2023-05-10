@@ -2,6 +2,31 @@
 h1{
     text-align: center;
 }
+
+.vertical-menu {
+    width: 120px;
+    margin: auto;
+  }
+  
+.vertical-menu a {
+
+    background-color: #eee;
+    color: rgb(25, 0, 255);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+  
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+  
+.vertical-menu a.active {
+    background-color: rgb(246, 86, 246);
+    color: white;
+}
+
+
 nav ul {
     margin: 0;
     padding: 0;
