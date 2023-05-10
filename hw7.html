@@ -2,18 +2,23 @@
 <html lang = "en">
     <head>
         <meta charset = "utf-8">
-        <meta name = "description" content = "Currently in development">
+        <meta name = "description" content = "Homework 7 Object Model and Miscellaneous jQuery">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title> JavaScript, jQuery, AJAX Homework 7 </title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hw7.css">
+        <script defer src="js/hw7.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
     </head>
+
     <body id="hw" style="background-color: bisque;">
         <div id="doge">
             <h1><b>CNIT HW 7</b></h1>
         </div>
 
         <div>
-            <h2>Currently under development...</h2>
+            <h2>Object Model and Miscellaneous jQuery!</h2>
         </div>
 
         <div id="navbar">
@@ -23,8 +28,110 @@
                 <li><a href="hw8.html">Next</a></li>
             </ul>
         </div>
-        
-        
+
+
+
+        <h1>Part 1! Choose your style!</h1>
+        <p>
+            Part 1 uses JavaScript and jQuery to change the<br>
+            background color, font style and font size.
+        </p>
+
+        <main id="editedString">
+            <p>
+                In the year 2050, a team of astronauts embarked on a historic 
+                mission to explore a distant planet in a neighboring galaxy. The 
+                journey took several months, during which the crew faced many 
+                challenges, including equipment malfunctions and unpredictable 
+                space weather. Finally, they arrived at their destination and began 
+                to explore the planet's surface. They were amazed by the strange and 
+                beautiful landscapes they encountered, and they eagerly collected 
+                samples to bring back to Earth for analysis.
+            </p>
+
+            <p>
+                Back on Earth, the samples from the alien planet were studied by 
+                a team of scientists. They discovered that the planet had once 
+                supported a thriving ecosystem, but it had been devastated by a 
+                catastrophic event. The findings were groundbreaking and shed 
+                new light on the possibilities of life in the universe. Inspired by 
+                their discoveries, the astronauts began planning their next mission,
+                 determined to continue exploring the mysteries of space.
+            </p>
+
+            <p>
+                Years later, a group of space travelers set out on a mission to 
+                colonize a distant planet. They were well-prepared and had the 
+                latest technology to support them. However, as they journeyed 
+                deeper into space, they began to encounter strange and 
+                unexpected phenomena that they had never encountered before. 
+                Despite the challenges, the team persevered and successfully 
+                established a new colony on the planet. They marveled at the beauty 
+                and wonders of the new world, and they knew that their journey 
+                had been worth it.
+            </p>
+        </main>
+
+        <form id="fontChange">
+            <p>Choose Background Color:</p>
+            <input type="radio" id="color1" name="colorBg" value="lightblue">
+            <label for="color1">Light Blue</label><br>
+            <input type="radio" id="color2" name="colorBg" value="lightgreen">
+            <label for="color2">Light Green</label><br>
+            
+            <p>Choose Font Style:</p>
+            <input type="checkbox" id="underline" name="fontStyle" value="underline">
+            <label for="underline">Underline</label><br>
+            <input type="checkbox" id="bold" name="fontStyle" value="bold">
+            <label for="bold">Bold</label><br>
+            <input type="checkbox" id="italic" name="fontStyle" value="italic">
+            <label for="italic">Italic</label><br>
+
+            <p>Choose Font Size:</p>
+            <select id="fontSize" name="fontSize">
+                <option value="1em">Small</option>
+                <option value="1.5em">Medium</option>
+                <option value="2em">Large</option>
+            </select>
+            <br>
+        </form>
+
+        <h1>Part 2! Browse my work!</h1>
+        <p>
+            Part 2 has a horizontal navbar that redirects user to other<br>
+            assignments by hovering over to show a drop down menu<br>
+            with the use of JavaScript and jQuery.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="hw2.html">Homework 2</a>
+                    <ul>
+                        <li><a href="hw2.html">Part 1</a></li>
+                        <li><a href="hw2.html">Part 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="hw3.html">Homework 3</a>
+                    <ul>
+                        <li><a href="hw3.html">Part 1</a></li>
+                        <li><a href="hw3.html">Part 2</a></li>
+                        <li><a href="hw3.html">Part 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="hw4.html">Homework 4</a>
+                    <ul>
+                        <li><a href="hw4.html">Part 1</a></li>
+                        <li><a href="hw4.html">Part 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+      </nav>
+
+
+
+
+    <form id="backup">
+        <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
+    </form>
 
     </body>
 
