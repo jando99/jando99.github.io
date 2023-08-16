@@ -2,10 +2,22 @@
 <html lang = "en">
     <head>
         <meta charset = "utf-8">
-        <meta name = "description" content = "Currently in development">
+        <meta name = "description" content = "HW8 Use of AJAX">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <title> JavaScript, jQuery, AJAX Homework 8 </title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css1/style.css">
+        <script defer src="js/hw8.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <style>
+            table,th,td {
+                border : 1px solid black;
+                border-collapse: collapse;
+            }
+            th,td {
+                padding: 5px;
+            }
+        </style>
     </head>
     <body id="hw" style="background-color: bisque;">
         <div id="doge">
@@ -13,7 +25,7 @@
         </div>
 
         <div>
-            <h2>Currently under development...</h2>
+            <h2>Homework 8 - AJAX Application</h2>
         </div>
 
         <div id="navbar">
@@ -22,7 +34,53 @@
                 <li><a href="hw1.html">Home</a></li>
             </ul>
         </div>
-        
+
+        <button type="button" onclick="loadDoc()">Get CD collection</button>
+        <br><br>
+        <table id="demo"></table>
+            
+            
+            
+        <h2>Explanation of AJAX</h2>
+        <p>
+            In the HTML file, you will notice some JavaScript code that uses AJAX.<br>
+            AJAX, short for Asynchronous JavaScript and XML, allows us to send and receive <br>
+            data from a server without reloading the entire page. It makes web experiences more <br>
+            dynamic and interactive by fetching data from the server in the background and <br>
+            updating specific parts of the webpage with the received data.<br>
+        </p>
+        <p>
+            Now, let's dive into the AJAX calls in the .html file. The code is making requests<br> 
+            to a server to retrieve data in XML format. It does this by creating an XMLHttpRequest<br> 
+            object, which is a commonly used tool for AJAX. The object is configured with the appropriate <br>
+            URL to send a "GET" request to the server. Then, the code sets up an <br>
+            event listener to handle the response asynchronously.<br>
+        </p>
+            
+        <br>
+
+        <h2>Tomorrow.Io Weather API</h2>
+        <p>
+            Tomorrow.Io Weather API is a RESTful API that delivers fast, reliable and up to date weather data!<br>
+            It offers 80+ layers of any historical, present time and forecasted data, not to mention that is <br>
+            an offical API. This can definitely help developers add real-time data about the weather.<br>
+        </p>
+
+        <p>
+            To access and use the Tomorrow.io Weather API, you need an API key. This key is required <br>
+            to authenticate your requests and track your API usage.<br>
+        </p>
+        <p>
+            The API provides both a free and a paid plan.The charged plan is $23 per month.<br>
+        </p>
+
+        <p>
+            To access <a href="https://docs.tomorrow.io/reference/welcome?ref=apilist.fun">Tomorrow.io</a> click here!<br>
+            You will witness more information about the API endpoints, request parameters,<br>
+            response format, authentication and how the API is used real-time.<br>
+        </p>
+
+            
         
 
     </body>
